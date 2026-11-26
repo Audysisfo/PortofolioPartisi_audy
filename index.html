@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio PARTISI | AUDY AWALIA PUTRI - Mahasiswa Sistem Informasi</title>
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sacramento&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Decorative Background Elements -->
+  <div class="blob-bg blob-1"></div>
+  <div class="blob-bg blob-2"></div>
+  <div class="blob-bg blob-3"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-sparkle">✦</span>
+        <span class="brand-text">PARTISI<span class="brand-dot">.</span>folio</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Riwayat & Pengalaman</a>
+          </li>
+          <!-- Menu Navigasi Khusus sesuai instruksi: Catatan PARTISI / Rangkuman Kaderisasi -->
+          <li class="nav-item">
+            <a href="#catatan-partisi" class="nav-link nav-highlight">
+              <i class="fa-solid fa-book-sparkles"></i> Catatan PARTISI
+              <span class="nav-tag-badge">Baru</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Kontak</a>
+          </li>
+        </ul>
+
+        <div class="nav-cta-wrapper">
+          <a href="#contact" class="btn btn-sm btn-yellow">
+            <i class="fa-regular fa-paper-plane"></i> Hubungi Saya
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Pilihan Palet Warna -->
+  <div class="theme-picker" id="themePicker">
+    <button class="theme-picker-toggle" id="themePickerToggle" type="button"
+      aria-label="Pilih warna tema" aria-expanded="false" aria-controls="themePickerOptions">
+      <i class="fa-solid fa-palette"></i>
+    </button>
+    <div class="theme-picker-options" id="themePickerOptions" role="radiogroup" aria-label="Pilihan warna tema">
+      <button class="theme-option active" type="button" data-theme="pink-yellow" role="radio"
+        aria-checked="true" aria-label="Tema pink dan kuning pastel">
+        <span class="theme-swatch theme-swatch-pink"></span>
+        <span>Pink & Kuning</span>
+        <i class="fa-solid fa-check theme-check"></i>
+      </button>
+      <button class="theme-option" type="button" data-theme="blue-purple" role="radio"
+        aria-checked="false" aria-label="Tema biru dan ungu pastel">
+        <span class="theme-swatch theme-swatch-blue"></span>
+        <span>Biru & Ungu</span>
+        <i class="fa-solid fa-check theme-check"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= 1. HERO SECTION ================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <!-- Badge Tag -->
+        <div class="badge-pill hero-badge">
+          <span class="badge-icon">✨</span>
+          <span>Mahasiswa Sistem Informasi &bull; Antusias UI/UX & Web Dev</span>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="hero-title">
+          Halo, Saya <span class="script-accent">AUDY AWALIA PUTRI</span>
+          <span class="hero-sparkle">★</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Mahasiswa Sistem Informasi yang berdedikasi menciptakan desain digital intuitif,
+          estetik, dan fungsional. Menggabungkan seni visual dengan teknologi web untuk
+          menghadirkan solusi yang bermakna bagi pengguna.
+        </p>
+
+        <!-- Call To Action Buttons -->
+        <div class="hero-actions">
+          <a href="#catatan-partisi" class="btn btn-yellow shadow-hover">
+            <i class="fa-solid fa-bookmark"></i> Catatan PARTISI
+          </a>
+          <a href="#contact" class="btn btn-outline shadow-hover">
+            <i class="fa-solid fa-id-card"></i> Unduh CV / Kontak
+          </a>
+        </div>
+
+        <!-- Quick Stats / Highlights inspired by moodboard -->
+        <div class="hero-stats-row">
+          <div class="stat-card">
+            <span class="stat-number">0</span>
+            <span class="stat-label">IPK Kumulatif</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Proyek & Desain</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Komitmen PARTISI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Profile Card -->
+      <div class="hero-visual">
+        <div class="profile-card-creative">
+          <!-- Washi Tape decorative element -->
+          <div class="washi-tape washi-top"></div>
+
+          <div class="profile-frame">
+            <img src="assets/images/profile-audy.jpg" alt="Foto Profil AUDY AWALIA PUTRI" class="profile-img"
+              id="profileImage">
+            <div class="profile-overlay-tag">
+              <i class="fa-solid fa-star"></i> Edisi Kaderisasi PARTISI
+            </div>
+          </div>
+
+          <!-- Floating Badges / Stickers -->
+          <div class="floating-badge badge-top-right">
+            <span class="badge-emoji">🎨</span>
+            <div>
+              <strong>UI/UX Enthusiast</strong>
+              <small>Figma & Web Prototyping</small>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <span class="badge-emoji">💡</span>
+            <div>
+              <strong>Creative Thinker</strong>
+              <small>Frontend & Problem Solver</small>
+            </div>
+          </div>
+
+          <div class="floating-sticker sticker-star-1">✦</div>
+          <div class="floating-sticker sticker-star-2">★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. TENTANG SAYA (ABOUT ME) ================= -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-sparkles"></i> Profil Diri</span>
+        <h2 class="section-title">Tentang <span class="highlight-pink">Saya</span></h2>
+        <p class="section-subtitle">
+          Mengenal lebih dekat perjalanan saya, minat dalam ekosistem digital, serta keahlian yang terus diasah.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Story / Bio Card -->
+        <div class="card about-bio-card">
+          <div class="washi-tape washi-pink"></div>
+          <h3 class="card-title"><i class="fa-solid fa-seedling"></i> Halo & Salam Kenal!</h3>
+          <p class="bio-text">
+            Saya merupakan mahasiswa S1 Sistem Informasi dan anak pertama dari 4 bersaudara.
+            Saya percaya bahwa teknologi terbaik adalah teknologi yang tidak hanya canggih secara arsitektur,
+            namun juga ramah, inklusif, dan menyenangkan untuk digunakan.
+          </p>
+          <p class="bio-text">
+            Melalui program <strong>PARTISI</strong>, saya terus melatih kepemimpinan, kerja tim, kedisiplinan, serta
+            ketangguhan mental
+            untuk menjadi insan akademis dan calon praktisi IT yang berintegritas dan siap berkontribusi bagi masyarakat
+            luas.
+          </p>
+
+          <div class="about-details-list">
+            <div class="detail-item">
+              <span class="detail-label"><i class="fa-solid fa-graduation-cap"></i> Pendidikan:</span>
+              <span class="detail-val">S1 Sistem Informasi</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label"><i class="fa-solid fa-laptop-code"></i> Fokus Minat:</span>
+              <span class="detail-val">UI/UX Design</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label"><i class="fa-solid fa-heart"></i> Hobi & Minat:</span>
+              <span class="detail-val">Baca Novel, Bersepeda</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Domisili:</span>
+              <span class="detail-val">Kalimantan Barat, Kota Pontianak</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills & Competencies Column -->
+        <div class="about-skills-wrapper">
+          <!-- Soft Skills & Values Card -->
+          <div class="card skill-group-card">
+            <h3 class="card-title"><i class="fa-solid fa-users"></i> Soft Skills & Nilai Utama</h3>
+            <div class="soft-skills-grid">
+              <div class="soft-box">
+                <i class="fa-solid fa-comments"></i>
+                <h4>Komunikasi Efektif</h4>
+                <p>Mampu menyampaikan gagasan teknis secara lugas dan terstruktur.</p>
+              </div>
+              <div class="soft-box">
+                <i class="fa-solid fa-people-group"></i>
+                <h4>Kolaborasi Tim</h4>
+                <p>Aktif berkontribusi positif dalam kelompok dan kegiatan organisasi.</p>
+              </div>
+              <div class="soft-box">
+                <i class="fa-solid fa-clock"></i>
+                <h4>Manajemen Waktu</h4>
+                <p>Disiplin dalam pembagian skala prioritas antara akademik dan organisasi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. PENGALAMAN & RIWAYAT (EXPERIENCE & EDUCATION) ================= -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-timeline"></i> Rekam Jejak</span>
+        <h2 class="section-title">Pengalaman & <span class="highlight-yellow">Riwayat</span></h2>
+        <p class="section-subtitle">
+          Langkah nyata dalam mengasah kepemimpinan, kontribusi kepanitiaan, serta rekam akademis.
+        </p>
+      </div>
+
+      <!-- Experience Tab Switcher -->
+      <div class="timeline-tabs">
+        <button class="tab-btn active" data-tab="tab-org">
+          <i class="fa-solid fa-sitemap"></i> Organisasi & Kepanitiaan
+        </button>
+        <button class="tab-btn" data-tab="tab-edu">
+          <i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan
+        </button>
+        <button class="tab-btn" data-tab="tab-awards">
+          <i class="fa-solid fa-trophy"></i> Prestasi & Sertifikasi
+        </button>
+      </div>
+
+      <!-- Tab 1: Organisasi & Kepanitiaan -->
+      <div class="tab-content active" id="tab-org">
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-badge pink-badge"><i class="fa-solid fa-flag"></i></div>
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-year">2023 - 2026</span>
+                <span class="timeline-role">Anggota PMR</span>
+              </div>
+              <h3 class="timeline-title">Palang Merah Remaja (PMR)</h3>
+              <div class="tags-row">
+                <span class="mini-tag">Anggota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge yellow-badge"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-year">2025 - 2026</span>
+                <span class="timeline-role">Ketua Bidang Kaderisasi</span>
+              </div>
+              <h3 class="timeline-title">PIK-R SENJA REMAJA</h3>
+              <div class="tags-row">
+                <span class="mini-tag">Ketua Bidang Kaderisasi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Riwayat Pendidikan -->
+      <div class="tab-content" id="tab-edu">
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-badge pink-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-year">2026 - Sekarang (Semester 1)</span>
+                <span class="timeline-role">Sarjana (S1)</span>
+              </div>
+              <h3 class="timeline-title">Program Studi Sistem Informasi</h3>
+              <p class="timeline-desc">
+                Mempelajari Rekayasa Perangkat Lunak, Interaksi Manusia dan Komputer (IMK), Analisis & Perancangan
+                Sistem,
+                Basis Data, serta Manajemen Proyek Teknologi Informasi. Aktif dalam berbagai proyek studi kasus riil.
+              </p>
+              <div class="tags-row">
+                <span class="mini-tag">Mahasiswa Baru (Semester Awal)</span>
+                <span class="mini-tag">Studi Kasus Sistem</span>
+                <span class="mini-tag">IMK & UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge yellow-badge"><i class="fa-solid fa-school"></i></div>
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-year">2023 - 2026</span>
+                <span class="timeline-role">Pendidikan Menengah Atas</span>
+              </div>
+              <h3 class="timeline-title">MAN 1 Pontianak</h3>
+              <p class="timeline-desc">
+                Lulus dengan predikat memuaskan. Aktif dalam ekstrakurikuler PMR dan PIK-R SENJA REMAJA.
+              </p>
+              <div class="tags-row">
+                <span class="mini-tag">PMR</span>
+                <span class="mini-tag">PIK-R SENJA REMAJA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Prestasi & Sertifikasi -->
+      <div class="tab-content" id="tab-awards">
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-badge yellow-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-year">2023</span>
+                <span class="timeline-role">Kompetisi Tingkat Provinsi</span>
+              </div>
+              <h3 class="timeline-title">Juara 1 Ular Tangga PMR Tingkat Provinsi</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 5. CATATAN PARTISI / RANGKUMAN KADERISASI (MENU KHUSUS) ================= -->
+  <section class="section partisi-section" id="catatan-partisi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-partisi"><i class="fa-solid fa-book-bookmark"></i> Halaman Khusus
+          Kaderisasi</span>
+        <h2 class="section-title">Catatan <span class="highlight-pink">PARTISI</span> & <span
+            class="highlight-yellow">Rangkuman Materi</span></h2>
+        <p class="section-subtitle">
+          Dokumentasi reflektif, ringkasan nilai esensial kepemimpinan, integritas mahasiswa,
+          dan catatan pembelajaran selama mengikuti rangkaian proses kaderisasi PARTISI.
+        </p>
+      </div>
+
+      <!-- Partisi Highlights Banner -->
+      <div class="partisi-banner card">
+        <div class="washi-tape washi-top"></div>
+        <div class="partisi-banner-content">
+          <div class="banner-badge">
+            <i class="fa-solid fa-graduation-cap"></i> Nilai Luhur PARTISI
+          </div>
+          <h3>PELATIHAN DASAR DAN ETIKA MAHASISWA SISTEM INFORMASI</h3>
+        </div>
+      </div>
+
+      <!-- Grid of Notes & Summaries -->
+      <div class="partisi-notes-grid">
+        <!-- Note Card 1 -->
+        <article class="note-card card">
+          <div class="note-tape"></div>
+          <div class="note-header">
+            <span class="note-tag tag-pink"><i class="fa-solid fa-lightbulb"></i> Modul 1</span>
+            <span class="note-date">Pekan ke-1</span>
+          </div>
+          <h3 class="note-title">Materi PARTISI 1: Mengenal Organisasi HMSI FMIPA UNTAN</h3>
+          <p class="note-excerpt">
+            Mengenal peran HMSI FMIPA Universitas Tanjungpura sebagai wadah pengembangan potensi akademik,
+            kreativitas, organisasi, serta kepemimpinan mahasiswa Sistem Informasi.
+          </p>
+          <div class="note-points">
+            <div class="point-item"><i class="fa-solid fa-user-tie"></i> Pemateri: Bang Nabil Nur Fauzan</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Visi dan Misi HMSI</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Struktur dan Pembagian Tugas Organisasi</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Peran serta Pengembangan Mahasiswa</div>
+          </div>
+          <button class="btn btn-sm btn-outline-pink note-btn" onclick="openNoteModal(1)">Baca Rangkuman
+            Lengkap</button>
+        </article>
+
+        <!-- Note Card 2 -->
+        <article class="note-card card">
+          <div class="note-tape"></div>
+          <div class="note-header">
+            <span class="note-tag tag-yellow"><i class="fa-solid fa-compass"></i> Partisi 1 - Materi 2</span>
+            <span class="note-date">Pekan ke-1</span>
+          </div>
+          <h3 class="note-title">Esensi Pengkaderan Mahasiswa Sistem Informasi</h3>
+          <p class="note-excerpt">
+            Pengkaderan membentuk mahasiswa agar memiliki pemahaman, sikap, tanggung jawab, karakter,
+            serta kemampuan berkontribusi aktif dalam lingkungan akademik dan organisasi.
+          </p>
+          <div class="note-points">
+            <div class="point-item"><i class="fa-solid fa-user-tie"></i> Pemateri: Bang Syukri Ma'ram</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Tujuan dan Manfaat Kaderisasi</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Alur PARTISI: Orientasi, Pembinaan, Evaluasi, Pengukuhan</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Pengembangan Karakter Mahasiswa</div>
+          </div>
+          <button class="btn btn-sm btn-outline-pink note-btn" onclick="openNoteModal(2)">Baca Rangkuman
+            Lengkap</button>
+        </article>
+
+        <!-- Note Card 3 -->
+        <article class="note-card card">
+          <div class="note-tape"></div>
+          <div class="note-header">
+            <span class="note-tag tag-pink"><i class="fa-solid fa-people-arrows"></i> Partisi 1 - Materi 3</span>
+            <span class="note-date">Pekan ke-1</span>
+          </div>
+          <h3 class="note-title">Budaya Kampus, Etika, dan Tanggung Jawab Akademik dalam Sistem Informasi</h3>
+          <p class="note-excerpt">
+            Mengenal budaya kampus, etika profesional, privasi, serta tanggung jawab akademik sebagai mahasiswa
+            Sistem Informasi yang berintegritas.
+          </p>
+          <div class="note-points">
+            <div class="point-item"><i class="fa-solid fa-user-tie"></i> Pemateri: Ibu Devi Gusmita, S.,Kom., M.Kom.</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Pengertian Sistem Informasi</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Prinsip Etika dan Privasi</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Penerapan Etika dalam Kehidupan Mahasiswa</div>
+          </div>
+          <button class="btn btn-sm btn-outline-pink note-btn" onclick="openNoteModal(3)">Baca Rangkuman
+            Lengkap</button>
+        </article>
+
+        <!-- Note Card 4 -->
+        <article class="note-card card">
+          <div class="note-tape"></div>
+          <div class="note-header">
+            <span class="note-tag tag-yellow"><i class="fa-solid fa-heart-pulse"></i> Materi PARTISI 2</span>
+            <span class="note-date">Materi 1</span>
+          </div>
+          <h3 class="note-title">Public Speaking dan Teknik Komunikasi yang Efektif</h3>
+          <p class="note-excerpt">
+            Kemampuan menyampaikan informasi, gagasan, dan pendapat secara lisan secara jelas,
+            terstruktur, mudah dipahami, serta percaya diri di hadapan audiens.
+          </p>
+          <div class="note-points">
+            <div class="point-item"><i class="fa-solid fa-user-tie"></i> Pemateri: Bang Irwansyah</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Pelafalan dan Intonasi Suara</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Teknik Penggunaan Mikrofon dan Gestur</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Komunikasi Efektif bagi Mahasiswa</div>
+          </div>
+          <button class="btn btn-sm btn-outline-pink note-btn" onclick="openNoteModal(4)">Baca Rangkuman
+            Lengkap</button>
+        </article>
+
+        <!-- Note Card 5 -->
+        <article class="note-card card">
+          <div class="note-tape"></div>
+          <div class="note-header">
+            <span class="note-tag tag-pink"><i class="fa-solid fa-compass"></i> Materi PARTISI 2</span>
+            <span class="note-date">Materi 2</span>
+          </div>
+          <h3 class="note-title">Pengembangan Diri, Pengenalan Potensi, dan Kesehatan Mental</h3>
+          <p class="note-excerpt">
+            Mengenali diri, memahami potensi dan hambatan, serta membangun kepercayaan diri melalui
+            refleksi diri dan pengembangan mental, emosional, dan sosial.
+          </p>
+          <div class="note-points">
+            <div class="point-item"><i class="fa-solid fa-user-tie"></i> Pemateri: Ibu Fitri</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Refleksi dan Kompas Diri</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Mengenali Kondisi Psikologis</div>
+            <div class="point-item"><i class="fa-solid fa-check"></i> Pengembangan Diri bagi Mahasiswa</div>
+          </div>
+          <button class="btn btn-sm btn-outline-pink note-btn" onclick="openNoteModal(5)">Baca Rangkuman
+            Lengkap</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. KONTAK & SOSIAL MEDIA ================= -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-envelope-open-text"></i> Mari Terhubung</span>
+        <h2 class="section-title">Kontak & <span class="highlight-pink">Sosial Media</span></h2>
+        <p class="section-subtitle">
+          Punya pertanyaan seputar portofolio, diskusi proyek teknologi, atau ingin berjejaring? Silakan kirimkan pesan!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info & Socials -->
+        <div class="card contact-info-card">
+          <div class="washi-tape washi-yellow"></div>
+          <h3 class="card-title"><i class="fa-solid fa-address-book"></i> Informasi Kontak</h3>
+          <p class="contact-lead">
+            Saya selalu terbuka untuk diskusi mengenai UI/UX Design, Front-End Web Development, serta kolaborasi
+            kegiatan kampus.
+          </p>
+
+          <div class="contact-list">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon-box pink"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Email Mahasiswa</span>
+                <a href="mailto:h1101261022@student.untan.ac.id" class="contact-val">h1101261022@student.untan.ac.id</a>
+              </div>
+              <button class="btn-copy" onclick="copyToClipboard('h1101261022@student.untan.ac.id', this)"
+                title="Salin Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- WhatsApp / Telegram -->
+            <div class="contact-item">
+              <div class="contact-icon-box yellow"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/6281515321882" target="_blank" rel="noopener"
+                  class="contact-val">0815-1532-1882</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon-box pink"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Kampus / Domisili</span>
+                <span class="contact-val">Kalimantan Barat, Kota Pontianak &bull; Jurusan Sistem Informasi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Grid -->
+          <div class="social-links-wrapper">
+            <h4 class="socials-title">Temukan Saya di Media Sosial:</h4>
+            <div class="socials-buttons">
+              <a href="https://www.instagram.com/liawallov_?bqrl=MTVjcDJyM2tlOHJ3cA==" target="_blank" rel="noopener"
+                class="social-btn instagram"
+                title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="https://github.com/Audysisfo" target="_blank" rel="noopener" class="social-btn github"
+                title="GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.figma.com/files/team/1681985843184314617/user/1681985841538162467?fuid=1681985841538162467"
+                target="_blank" rel="noopener" class="social-btn figma"
+                title="Figma Community">
+                <i class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="card contact-form-card">
+          <div class="washi-tape washi-pink"></div>
+          <h3 class="card-title"><i class="fa-regular fa-paper-plane"></i> Kirim Pesan Langsung</h3>
+
+          <form id="contactForm" onsubmit="handleFormSubmit(event)" novalidate>
+            <div class="form-group">
+              <label for="senderName" class="form-label">Nama Lengkap <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="senderName" class="form-input" placeholder="Masukkan nama Anda..." required>
+              </div>
+              <span class="error-msg" id="nameError">Mohon masukkan nama Anda</span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Alamat Email <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="senderEmail" class="form-input" placeholder="contoh: nama@email.com" required>
+              </div>
+              <span class="error-msg" id="emailError">Mohon masukkan email yang valid</span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject" class="form-label">Subjek / Topik</label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-tag"></i>
+                <input type="text" id="senderSubject" class="form-input"
+                  placeholder="Misal: Diskusi Proyek / Informasi PARTISI">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Pesan Anda <span class="required">*</span></label>
+              <textarea id="senderMessage" class="form-textarea" rows="4"
+                placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+              <span class="error-msg" id="messageError">Mohon tuliskan pesan Anda</span>
+            </div>
+
+            <button type="submit" class="btn btn-pink btn-block shadow-hover" id="submitBtn">
+              <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-sparkle">✦</span>
+          <span class="brand-text">PARTISI<span class="brand-dot">.</span>folio</span>
+          <p class="footer-tagline">
+            Portofolio & Arsip Catatan Kaderisasi Mahasiswa Sistem Informasi.
+            Membangun generasi digital yang berkompeten dan berkarakter.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#experience">Riwayat & Pengalaman</a></li>
+            <li><a href="#catatan-partisi">Catatan PARTISI</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-quote">
+          <div class="quote-box">
+            <span class="quote-mark">“</span>
+            <p>Consistency, respect your pace, and keep creating with heart.</p>
+            <span class="quote-author">&mdash; Portfolio Mastery PARTISI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>AUDY AWALIA PUTRI</strong> &bull; Portofolio PARTISI Mahasiswa Sistem Informasi. Dibuat
+          dengan cinta, warna pink pastel & kuning pastel ✨</p>
+        <a href="#hero" class="back-to-top" title="Kembali ke atas">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS ================= -->
+  <!-- Project Modal -->
+  <div class="modal-backdrop" id="projectModal" onclick="closeProjectModal(event)">
+    <div class="modal-card card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeProjectModal()">&times;</button>
+      <div id="projectModalContent">
+        <!-- Content will be injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Note Modal for PARTISI Notes -->
+  <div class="modal-backdrop" id="noteModal" onclick="closeNoteModal(event)">
+    <div class="modal-card card note-modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeNoteModal()">&times;</button>
+      <div id="noteModalContent">
+        <!-- Content will be injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMessage">Pesan berhasil dikirim!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
